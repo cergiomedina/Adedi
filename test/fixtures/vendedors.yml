@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_vendedor: MyString
+  apellido_vendedor: MyString
+  rut_vendedor: 1
+  correo_vendedor: MyString
+  direccion_vendedor: MyString
+  telefono_vendedor: 1
+  estado_vendedor: MyString
+  password_vendedor: MyString
+
+two:
+  nombre_vendedor: MyString
+  apellido_vendedor: MyString
+  rut_vendedor: 1
+  correo_vendedor: MyString
+  direccion_vendedor: MyString
+  telefono_vendedor: 1
+  estado_vendedor: MyString
+  password_vendedor: MyString

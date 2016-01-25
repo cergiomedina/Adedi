@@ -1,0 +1,49 @@
+<%= form_for(@vendedor) do |f| %>
+  <% if @vendedor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vendedor.errors.count, "error") %> prohibited this vendedor from being saved:</h2>
+
+      <ul>
+      <% @vendedor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_vendedor %><br>
+    <%= f.text_field :nombre_vendedor %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido_vendedor %><br>
+    <%= f.text_field :apellido_vendedor %>
+  </div>
+  <div class="field">
+    <%= f.label :rut_vendedor %><br>
+    <%= f.number_field :rut_vendedor %>
+  </div>
+  <div class="field">
+    <%= f.label :correo_vendedor %><br>
+    <%= f.text_field :correo_vendedor %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion_vendedor %><br>
+    <%= f.text_field :direccion_vendedor %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_vendedor %><br>
+    <%= f.number_field :telefono_vendedor %>
+  </div>
+  <div class="field">
+    <%= f.label :estado_vendedor %><br>
+    <%= f.text_field :estado_vendedor %>
+  </div>
+  <div class="field">
+    <%= f.label :password_vendedor %><br>
+    <%= f.text_field :password_vendedor %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
