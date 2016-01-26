@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id disfraz:</strong>
+  <%= @disfraz.id_disfraz %>
+</p>
+
+<p>
+  <strong>Categoria disfraz:</strong>
+  <%= @disfraz.categoria_disfraz %>
+</p>
+
+<p>
+  <strong>Stock disfraz:</strong>
+  <%= @disfraz.stock_disfraz %>
+</p>
+
+<p>
+  <strong>Stock disponible:</strong>
+  <%= @disfraz.stock_disponible %>
+</p>
+
+<%= link_to 'Edit', edit_disfraz_path(@disfraz) %> |
+<%= link_to 'Back', disfrazs_path %>

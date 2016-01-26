@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_log: 1
+  rut_usuario: 1
+  tabla_afectada: MyString
+  instruccion: MyString
+  datos_antes: MyString
+  datos_despues: MyString
+  fecha_modificacion: MyString
+
+two:
+  id_log: 1
+  rut_usuario: 1
+  tabla_afectada: MyString
+  instruccion: MyString
+  datos_antes: MyString
+  datos_despues: MyString
+  fecha_modificacion: MyString

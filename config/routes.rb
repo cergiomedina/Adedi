@@ -1,4 +1,24 @@
 Rails.application.routes.draw do
+  resources :auditoria
+
+  resources :parametro_sistemas
+
+  resources :transicion_est_clientes
+
+  resources :cliente_estados
+
+  resources :transicion_est_ejemplars
+
+  resources :ejemplar_estados
+
+  resources :ejemplars
+
+  resources :disfrazs
+
+  resources :categoria
+
+  resources :clientes
+
   resources :vendedors
 
   # The priority is based upon order of creation: first created -> highest priority.

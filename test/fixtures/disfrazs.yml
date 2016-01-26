@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_disfraz: 1
+  categoria_disfraz: MyString
+  stock_disfraz: 1
+  stock_disponible: 1
+
+two:
+  id_disfraz: 1
+  categoria_disfraz: MyString
+  stock_disfraz: 1
+  stock_disponible: 1

@@ -1,0 +1,45 @@
+<%= form_for(@auditorium) do |f| %>
+  <% if @auditorium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@auditorium.errors.count, "error") %> prohibited this auditorium from being saved:</h2>
+
+      <ul>
+      <% @auditorium.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_log %><br>
+    <%= f.number_field :id_log %>
+  </div>
+  <div class="field">
+    <%= f.label :rut_usuario %><br>
+    <%= f.number_field :rut_usuario %>
+  </div>
+  <div class="field">
+    <%= f.label :tabla_afectada %><br>
+    <%= f.text_field :tabla_afectada %>
+  </div>
+  <div class="field">
+    <%= f.label :instruccion %><br>
+    <%= f.text_field :instruccion %>
+  </div>
+  <div class="field">
+    <%= f.label :datos_antes %><br>
+    <%= f.text_field :datos_antes %>
+  </div>
+  <div class="field">
+    <%= f.label :datos_despues %><br>
+    <%= f.text_field :datos_despues %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_modificacion %><br>
+    <%= f.text_field :fecha_modificacion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_ejemplar: 1
+  talla_ejemplar: MyString
+  color_ejemplar: MyString
+  estado_ejemplar: MyString
+  precio_ejemplar: MyString
+
+two:
+  id_ejemplar: 1
+  talla_ejemplar: MyString
+  color_ejemplar: MyString
+  estado_ejemplar: MyString
+  precio_ejemplar: MyString

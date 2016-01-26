@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_cliente: 1
+  nombre_cliente: MyString
+  apellido_cliente: MyString
+  rut_cliente: 1
+  correo_cliente: MyString
+  direccion_cliente: MyString
+  telefono_cliente: 1
+  estado_cliente: MyString
+  password_cliente: MyString
+
+two:
+  id_cliente: 1
+  nombre_cliente: MyString
+  apellido_cliente: MyString
+  rut_cliente: 1
+  correo_cliente: MyString
+  direccion_cliente: MyString
+  telefono_cliente: 1
+  estado_cliente: MyString
+  password_cliente: MyString

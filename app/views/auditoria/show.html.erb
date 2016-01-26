@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id log:</strong>
+  <%= @auditorium.id_log %>
+</p>
+
+<p>
+  <strong>Rut usuario:</strong>
+  <%= @auditorium.rut_usuario %>
+</p>
+
+<p>
+  <strong>Tabla afectada:</strong>
+  <%= @auditorium.tabla_afectada %>
+</p>
+
+<p>
+  <strong>Instruccion:</strong>
+  <%= @auditorium.instruccion %>
+</p>
+
+<p>
+  <strong>Datos antes:</strong>
+  <%= @auditorium.datos_antes %>
+</p>
+
+<p>
+  <strong>Datos despues:</strong>
+  <%= @auditorium.datos_despues %>
+</p>
+
+<p>
+  <strong>Fecha modificacion:</strong>
+  <%= @auditorium.fecha_modificacion %>
+</p>
+
+<%= link_to 'Edit', edit_auditorium_path(@auditorium) %> |
+<%= link_to 'Back', auditoria_path %>

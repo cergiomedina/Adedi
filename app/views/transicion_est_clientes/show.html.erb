@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Est ini cliente:</strong>
+  <%= @transicion_est_cliente.est_ini_cliente %>
+</p>
+
+<p>
+  <strong>Est fin cliente:</strong>
+  <%= @transicion_est_cliente.est_fin_cliente %>
+</p>
+
+<%= link_to 'Edit', edit_transicion_est_cliente_path(@transicion_est_cliente) %> |
+<%= link_to 'Back', transicion_est_clientes_path %>

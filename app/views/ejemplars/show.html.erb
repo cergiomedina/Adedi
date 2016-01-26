@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id ejemplar:</strong>
+  <%= @ejemplar.id_ejemplar %>
+</p>
+
+<p>
+  <strong>Talla ejemplar:</strong>
+  <%= @ejemplar.talla_ejemplar %>
+</p>
+
+<p>
+  <strong>Color ejemplar:</strong>
+  <%= @ejemplar.color_ejemplar %>
+</p>
+
+<p>
+  <strong>Estado ejemplar:</strong>
+  <%= @ejemplar.estado_ejemplar %>
+</p>
+
+<p>
+  <strong>Precio ejemplar:</strong>
+  <%= @ejemplar.precio_ejemplar %>
+</p>
+
+<%= link_to 'Edit', edit_ejemplar_path(@ejemplar) %> |
+<%= link_to 'Back', ejemplars_path %>

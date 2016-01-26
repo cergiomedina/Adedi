@@ -1,0 +1,33 @@
+<h1>Listing ejemplars</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id ejemplar</th>
+      <th>Talla ejemplar</th>
+      <th>Color ejemplar</th>
+      <th>Estado ejemplar</th>
+      <th>Precio ejemplar</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ejemplars.each do |ejemplar| %>
+      <tr>
+        <td><%= ejemplar.id_ejemplar %></td>
+        <td><%= ejemplar.talla_ejemplar %></td>
+        <td><%= ejemplar.color_ejemplar %></td>
+        <td><%= ejemplar.estado_ejemplar %></td>
+        <td><%= ejemplar.precio_ejemplar %></td>
+        <td><%= link_to 'Show', ejemplar %></td>
+        <td><%= link_to 'Edit', edit_ejemplar_path(ejemplar) %></td>
+        <td><%= link_to 'Destroy', ejemplar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ejemplar', new_ejemplar_path %>
