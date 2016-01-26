@@ -28,7 +28,7 @@ class ClienteEstadosController < ApplicationController
 
     respond_to do |format|
       if @cliente_estado.save
-        format.html { redirect_to @cliente_estado, notice: 'Cliente estado was successfully created.' }
+        format.html { redirect_to @cliente_estado, notice: 'El estado-cliente fue satisfactoriamente creado.' }
         format.json { render :show, status: :created, location: @cliente_estado }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ClienteEstadosController < ApplicationController
   def update
     respond_to do |format|
       if @cliente_estado.update(cliente_estado_params)
-        format.html { redirect_to @cliente_estado, notice: 'Cliente estado was successfully updated.' }
+        format.html { redirect_to @cliente_estado, notice: 'El estado-cliente fue satisfactoriamente actualizado.' }
         format.json { render :show, status: :ok, location: @cliente_estado }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class ClienteEstadosController < ApplicationController
   def destroy
     @cliente_estado.destroy
     respond_to do |format|
-      format.html { redirect_to cliente_estados_url, notice: 'Cliente estado was successfully destroyed.' }
+      format.html { redirect_to cliente_estados_url, notice: 'El estado-cliente fue satisfactoriamente eliminado.' }
       format.json { head :no_content }
     end
   end

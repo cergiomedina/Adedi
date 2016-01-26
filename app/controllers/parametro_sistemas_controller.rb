@@ -28,7 +28,7 @@ class ParametroSistemasController < ApplicationController
 
     respond_to do |format|
       if @parametro_sistema.save
-        format.html { redirect_to @parametro_sistema, notice: 'Parametro sistema was successfully created.' }
+        format.html { redirect_to @parametro_sistema, notice: 'El nuevo parametro del sistema ha sido creado.' }
         format.json { render :show, status: :created, location: @parametro_sistema }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ParametroSistemasController < ApplicationController
   def update
     respond_to do |format|
       if @parametro_sistema.update(parametro_sistema_params)
-        format.html { redirect_to @parametro_sistema, notice: 'Parametro sistema was successfully updated.' }
+        format.html { redirect_to @parametro_sistema, notice: 'El parametro del sistema ha sido actualizado.' }
         format.json { render :show, status: :ok, location: @parametro_sistema }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class ParametroSistemasController < ApplicationController
   def destroy
     @parametro_sistema.destroy
     respond_to do |format|
-      format.html { redirect_to parametro_sistemas_url, notice: 'Parametro sistema was successfully destroyed.' }
+      format.html { redirect_to parametro_sistemas_url, notice: 'El parametro del sistema ha sido eliminado.' }
       format.json { head :no_content }
     end
   end

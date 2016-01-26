@@ -28,7 +28,7 @@ class ArriendosController < ApplicationController
 
     respond_to do |format|
       if @arriendo.save
-        format.html { redirect_to @arriendo, notice: 'Arriendo was successfully created.' }
+        format.html { redirect_to @arriendo, notice: 'El arriendo fue satisfactoriamente asignado.' }
         format.json { render :show, status: :created, location: @arriendo }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ArriendosController < ApplicationController
   def update
     respond_to do |format|
       if @arriendo.update(arriendo_params)
-        format.html { redirect_to @arriendo, notice: 'Arriendo was successfully updated.' }
+        format.html { redirect_to @arriendo, notice: 'El arriendo fue satisfactoriamente actualizado.' }
         format.json { render :show, status: :ok, location: @arriendo }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class ArriendosController < ApplicationController
   def destroy
     @arriendo.destroy
     respond_to do |format|
-      format.html { redirect_to arriendos_url, notice: 'Arriendo was successfully destroyed.' }
+      format.html { redirect_to arriendos_url, notice: 'El arriendo fue satisfactoriamente eliminado.' }
       format.json { head :no_content }
     end
   end
