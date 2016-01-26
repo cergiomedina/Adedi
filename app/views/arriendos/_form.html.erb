@@ -1,0 +1,41 @@
+<%= form_for(@arriendo) do |f| %>
+  <% if @arriendo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@arriendo.errors.count, "error") %> prohibited this arriendo from being saved:</h2>
+
+      <ul>
+      <% @arriendo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_arriendo %><br>
+    <%= f.text_field :id_arriendo %>
+  </div>
+  <div class="field">
+    <%= f.label :numero_disfraces %><br>
+    <%= f.number_field :numero_disfraces %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_arriendo %><br>
+    <%= f.date_select :fecha_arriendo %>
+  </div>
+  <div class="field">
+    <%= f.label :estado_arriendo %><br>
+    <%= f.text_field :estado_arriendo %>
+  </div>
+  <div class="field">
+    <%= f.label :total_arriendo %><br>
+    <%= f.number_field :total_arriendo %>
+  </div>
+  <div class="field">
+    <%= f.label :total_garantia %><br>
+    <%= f.number_field :total_garantia %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

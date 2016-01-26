@@ -1,0 +1,33 @@
+<%= form_for(@detalle_arriendo) do |f| %>
+  <% if @detalle_arriendo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@detalle_arriendo.errors.count, "error") %> prohibited this detalle_arriendo from being saved:</h2>
+
+      <ul>
+      <% @detalle_arriendo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :linea_detalle_arriendo %><br>
+    <%= f.number_field :linea_detalle_arriendo %>
+  </div>
+  <div class="field">
+    <%= f.label :garantia_arriendo %><br>
+    <%= f.number_field :garantia_arriendo %>
+  </div>
+  <div class="field">
+    <%= f.label :precio_arriendo %><br>
+    <%= f.number_field :precio_arriendo %>
+  </div>
+  <div class="field">
+    <%= f.label :diferencia_dinero %><br>
+    <%= f.number_field :diferencia_dinero %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

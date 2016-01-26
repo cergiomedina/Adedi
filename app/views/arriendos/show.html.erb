@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id arriendo:</strong>
+  <%= @arriendo.id_arriendo %>
+</p>
+
+<p>
+  <strong>Numero disfraces:</strong>
+  <%= @arriendo.numero_disfraces %>
+</p>
+
+<p>
+  <strong>Fecha arriendo:</strong>
+  <%= @arriendo.fecha_arriendo %>
+</p>
+
+<p>
+  <strong>Estado arriendo:</strong>
+  <%= @arriendo.estado_arriendo %>
+</p>
+
+<p>
+  <strong>Total arriendo:</strong>
+  <%= @arriendo.total_arriendo %>
+</p>
+
+<p>
+  <strong>Total garantia:</strong>
+  <%= @arriendo.total_garantia %>
+</p>
+
+<%= link_to 'Edit', edit_arriendo_path(@arriendo) %> |
+<%= link_to 'Back', arriendos_path %>

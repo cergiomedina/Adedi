@@ -1,0 +1,25 @@
+<%= form_for(@transicion_est_vendedor) do |f| %>
+  <% if @transicion_est_vendedor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@transicion_est_vendedor.errors.count, "error") %> prohibited this transicion_est_vendedor from being saved:</h2>
+
+      <ul>
+      <% @transicion_est_vendedor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :est_ini_vendedor %><br>
+    <%= f.text_field :est_ini_vendedor %>
+  </div>
+  <div class="field">
+    <%= f.label :est_fin_vendedor %><br>
+    <%= f.text_field :est_fin_vendedor %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

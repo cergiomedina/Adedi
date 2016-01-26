@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_arriendo: 
+  numero_disfraces: 1
+  fecha_arriendo: 2016-01-25
+  estado_arriendo: MyString
+  total_arriendo: 1
+  total_garantia: 1
+
+two:
+  id_arriendo: 
+  numero_disfraces: 1
+  fecha_arriendo: 2016-01-25
+  estado_arriendo: MyString
+  total_arriendo: 1
+  total_garantia: 1

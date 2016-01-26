@@ -1,0 +1,25 @@
+<%= form_for(@multum) do |f| %>
+  <% if @multum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@multum.errors.count, "error") %> prohibited this multum from being saved:</h2>
+
+      <ul>
+      <% @multum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_multa %><br>
+    <%= f.text_field :id_multa %>
+  </div>
+  <div class="field">
+    <%= f.label :total_multa %><br>
+    <%= f.number_field :total_multa %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

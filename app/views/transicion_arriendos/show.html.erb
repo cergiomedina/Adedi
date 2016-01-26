@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Est ini arriendo:</strong>
+  <%= @transicion_arriendo.est_ini_arriendo %>
+</p>
+
+<p>
+  <strong>Est fin arriendo:</strong>
+  <%= @transicion_arriendo.est_fin_arriendo %>
+</p>
+
+<%= link_to 'Edit', edit_transicion_arriendo_path(@transicion_arriendo) %> |
+<%= link_to 'Back', transicion_arriendos_path %>

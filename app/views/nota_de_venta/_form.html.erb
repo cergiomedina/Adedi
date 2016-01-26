@@ -1,0 +1,25 @@
+<%= form_for(@nota_de_ventum) do |f| %>
+  <% if @nota_de_ventum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@nota_de_ventum.errors.count, "error") %> prohibited this nota_de_ventum from being saved:</h2>
+
+      <ul>
+      <% @nota_de_ventum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_nota %><br>
+    <%= f.text_field :id_nota %>
+  </div>
+  <div class="field">
+    <%= f.label :total_nota %><br>
+    <%= f.number_field :total_nota %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

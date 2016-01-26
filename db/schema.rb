@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160126003220) do
+ActiveRecord::Schema.define(version: 20160126005253) do
+
+  create_table "arriendo_estados", force: true do |t|
+    t.integer  "id_est_arriendo"
+    t.string   "est_arriendo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "arriendos", force: true do |t|
+    t.integer  "id_arriendo"
+    t.integer  "numero_disfraces"
+    t.date     "fecha_arriendo"
+    t.string   "estado_arriendo"
+    t.integer  "total_arriendo"
+    t.integer  "total_garantia"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "auditoria", force: true do |t|
     t.integer  "id_log"
@@ -54,6 +72,28 @@ ActiveRecord::Schema.define(version: 20160126003220) do
     t.datetime "updated_at"
   end
 
+  create_table "detalle_arriendos", force: true do |t|
+    t.integer  "linea_detalle_arriendo"
+    t.integer  "garantia_arriendo"
+    t.integer  "precio_arriendo"
+    t.integer  "diferencia_dinero"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "detalle_devolucions", force: true do |t|
+    t.integer  "linea_detalle_dev"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "devolucions", force: true do |t|
+    t.integer  "id_devolucion"
+    t.date     "fecha_devolucion"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "disfrazs", force: true do |t|
     t.integer  "id_disfraz"
     t.string   "categoria_disfraz"
@@ -80,10 +120,53 @@ ActiveRecord::Schema.define(version: 20160126003220) do
     t.datetime "updated_at"
   end
 
+  create_table "multa", force: true do |t|
+    t.integer  "id_multa"
+    t.integer  "total_multa"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "nota_de_venta", force: true do |t|
+    t.integer  "id_nota"
+    t.integer  "total_nota"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "parametro_sistemas", force: true do |t|
     t.integer  "id_parametro"
     t.string   "nombre_parametro"
     t.integer  "valor_parametro"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pedido_estados", force: true do |t|
+    t.integer  "id_est_pedido"
+    t.string   "est_pedido"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pedidos", force: true do |t|
+    t.integer  "id_pedido"
+    t.date     "fecha_pedido"
+    t.string   "estado_pedido"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pedidos_detalles", force: true do |t|
+    t.date     "fecha_retiro"
+    t.date     "fecha_dev"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "transicion_arriendos", force: true do |t|
+    t.string   "est_ini_arriendo"
+    t.string   "est_fin_arriendo"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -98,6 +181,27 @@ ActiveRecord::Schema.define(version: 20160126003220) do
   create_table "transicion_est_ejemplars", force: true do |t|
     t.string   "est_ini_ejemplar"
     t.string   "est_fin_ejemplar"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "transicion_est_pedidos", force: true do |t|
+    t.string   "est_ini_pedido"
+    t.string   "est_fin_pedido"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "transicion_est_vendedors", force: true do |t|
+    t.string   "est_ini_vendedor"
+    t.string   "est_fin_vendedor"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "vendedor_estados", force: true do |t|
+    t.integer  "id_est_vendedor"
+    t.string   "est_vendedor"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

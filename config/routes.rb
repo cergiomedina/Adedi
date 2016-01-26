@@ -1,4 +1,32 @@
 Rails.application.routes.draw do
+  resources :transicion_arriendos
+
+  resources :arriendo_estados
+
+  resources :detalle_arriendos
+
+  resources :arriendos
+
+  resources :multa
+
+  resources :nota_de_venta
+
+  resources :detalle_devolucions
+
+  resources :devolucions
+
+  resources :vendedor_estados
+
+  resources :transicion_est_vendedors
+
+  resources :pedidos_detalles
+
+  resources :transicion_est_pedidos
+
+  resources :pedido_estados
+
+  resources :pedidos
+
   resources :auditoria
 
   resources :parametro_sistemas

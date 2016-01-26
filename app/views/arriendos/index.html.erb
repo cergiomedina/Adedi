@@ -1,0 +1,35 @@
+<h1>Listing arriendos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id arriendo</th>
+      <th>Numero disfraces</th>
+      <th>Fecha arriendo</th>
+      <th>Estado arriendo</th>
+      <th>Total arriendo</th>
+      <th>Total garantia</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @arriendos.each do |arriendo| %>
+      <tr>
+        <td><%= arriendo.id_arriendo %></td>
+        <td><%= arriendo.numero_disfraces %></td>
+        <td><%= arriendo.fecha_arriendo %></td>
+        <td><%= arriendo.estado_arriendo %></td>
+        <td><%= arriendo.total_arriendo %></td>
+        <td><%= arriendo.total_garantia %></td>
+        <td><%= link_to 'Show', arriendo %></td>
+        <td><%= link_to 'Edit', edit_arriendo_path(arriendo) %></td>
+        <td><%= link_to 'Destroy', arriendo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Arriendo', new_arriendo_path %>

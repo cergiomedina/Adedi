@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Est ini pedido:</strong>
+  <%= @transicion_est_pedido.est_ini_pedido %>
+</p>
+
+<p>
+  <strong>Est fin pedido:</strong>
+  <%= @transicion_est_pedido.est_fin_pedido %>
+</p>
+
+<%= link_to 'Edit', edit_transicion_est_pedido_path(@transicion_est_pedido) %> |
+<%= link_to 'Back', transicion_est_pedidos_path %>

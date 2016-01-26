@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha_retiro: 2016-01-25
+  fecha_dev: 2016-01-25
+
+two:
+  fecha_retiro: 2016-01-25
+  fecha_dev: 2016-01-25

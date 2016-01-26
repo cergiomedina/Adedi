@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  linea_detalle_arriendo: 1
+  garantia_arriendo: 1
+  precio_arriendo: 1
+  diferencia_dinero: 1
+
+two:
+  linea_detalle_arriendo: 1
+  garantia_arriendo: 1
+  precio_arriendo: 1
+  diferencia_dinero: 1

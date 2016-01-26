@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  linea_detalle_dev: 1
+
+two:
+  linea_detalle_dev: 1

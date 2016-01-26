@@ -1,0 +1,31 @@
+<h1>Listing detalle_arriendos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Linea detalle arriendo</th>
+      <th>Garantia arriendo</th>
+      <th>Precio arriendo</th>
+      <th>Diferencia dinero</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @detalle_arriendos.each do |detalle_arriendo| %>
+      <tr>
+        <td><%= detalle_arriendo.linea_detalle_arriendo %></td>
+        <td><%= detalle_arriendo.garantia_arriendo %></td>
+        <td><%= detalle_arriendo.precio_arriendo %></td>
+        <td><%= detalle_arriendo.diferencia_dinero %></td>
+        <td><%= link_to 'Show', detalle_arriendo %></td>
+        <td><%= link_to 'Edit', edit_detalle_arriendo_path(detalle_arriendo) %></td>
+        <td><%= link_to 'Destroy', detalle_arriendo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Detalle arriendo', new_detalle_arriendo_path %>
